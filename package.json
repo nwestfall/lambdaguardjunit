@@ -1,0 +1,37 @@
+{
+  "name": "lambdaguardjunit",
+  "version": "0.1.0",
+  "description": "Transform Lambda Guard results into JUnit Test results for CI pipelines.",
+  "main": "runner.js",
+  "scripts": {
+    "convert": "node runner.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwestfall/lambdaguardjunit.git"
+  },
+  "keywords": [
+    "lambdaguard",
+    "aws",
+    "lambda",
+    "scan",
+    "security"
+  ],
+  "author": "Nathan Westfall",
+  "license": "MIT",
+  "bin": {
+    "lambdaguardjunit": "./runner.js"
+  },
+  "bugs": {
+    "url": "https://github.com/nwestfall/lambdaguardjunit/issues"
+  },
+  "homepage": "https://github.com/nwestfall/lambdaguardjunit#readme",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5",
+    "junit-report-builder": "^2.0.0",
+    "lodash": "^4.17.15",
+    "minimist": ">=0.2.1"
+  }
+}
